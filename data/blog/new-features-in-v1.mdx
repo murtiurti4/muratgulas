@@ -1,8 +1,8 @@
 ---
-title: 'New features in v1'
+title: 'Facebook Ads - Şimdi Ne Yapayım?'
 date: 2021-08-07T15:32:14Z
 lastmod: '2021-02-01'
-tags: ['next-js', 'tailwind', 'guide']
+tags: ['facebook-ads']
 draft: false
 summary: 'An overview of the new features released in v1 - code block copy, multiple authors, frontmatter layout and more'
 layout: PostSimple
@@ -10,30 +10,26 @@ bibliography: references-data.bib
 canonicalUrl: https://tailwind-nextjs-starter-blog.vercel.app/blog/new-features-in-v1/
 ---
 
-## Overview
+<TOCInline toc={props.toc} asDisclosure />
 
-A post on the new features introduced in v1.0. New features:
+## Veri Topladınız, Şimdi Ne Var?
 
-<TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
+Facebook reklamlarınızı açtınız, veri topladınız ve bazı verilerden memnun, bazılarından memnun değil misiniz?
+Düşük performans gösteren Facebook reklamları için elinizdeki veri ile ne yapabilirsiniz örnekler ile anlatıyorum:
 
-First load JS decreased from 43kB to 39kB despite all the new features added!^[With the new changes in Nextjs 12, first load JS increase to 45kB.]
+<TOCInline toc={props.toc} exclude="Veri Topladınız, Şimdi Ne Var?" toHeading={2} />
 
-See [upgrade guide](#upgrade-guide) below if you are migrating from v0 version of the template.
 
-## Theme colors
+## Problem 1: Düşük/Az Görüntülenme 
 
-You can easily modify the theme color by changing the primary attribute in the tailwind config file:
+### Muhtemel Sebep 1: Hedef kitleniz çok düşük
+Uygulama: 
+- Hedef kitleyi büyütün
 
-```js:tailwind.config.js
-theme: {
-    colors: {
-      primary: colors.teal,
-      gray: colors.neutral,
-      ...
-    }
-  ...
-}
-```
+Örnekler:
+- Yeniden hedefleme yapıyorsanız hedef kitle en az +1.000 olmalı
+- Soğuk trafik testi yapıyorsanız en az 200.000 kişilik kitle önerilir
+ 
 
 The primary color attribute should be assigned an object with keys from 50, 100, 200 ... 900 and the corresponding color code values.
 
